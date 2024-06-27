@@ -1,0 +1,21 @@
+.toptobottom {
+    animation-name: toptobottom;
+    animation-duration: .8s;
+}
+
+@keyframes toptobottom{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+.Gallery-slide {
+    height: 10rem;
+    width: 37rem;
+    position: relative;
+  }
+  

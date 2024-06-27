@@ -1,0 +1,102 @@
+*
+{
+	padding:0;
+	margin:0;
+}
+h2{
+	color:  #0a1535;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	padding: 10px;
+	text-shadow: 2px 2px 4px #0a1535;
+}
+
+h3{
+	justify-content: center;
+	display: grid;
+	font-weight: bolder;
+	color: #0a1535;
+	font-size: 20px;
+	text-shadow: 2px 2px 4px #062ea7;
+
+}
+
+.all
+{
+	padding:30px;
+	font-size:18px;
+	font-weight:300;
+	line-height:24px;
+}
+
+.all p
+{
+	text-align: justify;
+	font-weight: 545;
+	font-size: 18px;
+	color:  #0a1535;
+	margin-top: 70px;
+	margin-bottom:30px;
+}
+
+
+.det
+{
+	width:450px;
+	position:relative;
+	padding: 1%;
+	background-color:#fff;
+	border-radius:8px;
+	margin-bottom:10px;
+}
+
+.det img
+{
+	margin-top: 30px;
+	width:100%;
+	height: auto;
+	border-radius:10px;
+	box-shadow: #0a1535;
+	box-shadow: 0 4px 8px 0 #0a1535, 0 6px 20px 0 #0a1535;
+	transition: 0.4s;
+}
+
+.det img:hover{
+	width: 103%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.det.right
+{
+	float:right;
+	margin-left:20px;
+}
+.det.left
+{
+	float:left;
+	margin-right:20px;
+}
+
+
+@media screen and (max-width:767px)
+{
+	
+	.det.right
+	{
+		float:none;
+		margin-left:0px;
+	}
+	.det.left
+	{
+		float:none;
+		margin-right:0px;
+	}
+	.det{
+		width:100%;
+	}
+}
+
+
+

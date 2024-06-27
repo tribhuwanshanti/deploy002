@@ -1,0 +1,166 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    margin-top: 80px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    
+}
+
+.message1, .message2 {
+    position: relative;
+    padding: 48px 50px;
+    height: 500px;
+}
+
+.message1 .content-left,
+.message2 .content-right {
+    font-family: 'Poppins';
+    width: 55%;
+    height: 400px;
+    position: absolute;
+    padding-top: 0;
+}
+
+.message1 .content-left {
+    top: 45px;
+    left: 48px;
+}
+.message2 .content-left h3,
+.message1 .content-right h3{
+    font-weight: 600;
+}
+.message2 .content-right {
+    top: 60px;
+    right: 48px;
+}
+
+.message1 .content-left p,
+.message2 .content-right p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.message1 .content-right,
+.message2 .content-left {
+    width: 35%;
+    height: 400px;
+    position: absolute;
+}
+
+.message1 .content-right {
+    text-align: center;
+    top: 48px;
+    right: 48px;
+}
+
+.message2 .content-left {
+    text-align: center;
+    top: 65px;
+    left: 48px;
+}
+
+.message1 .content-right img,
+.message2 .content-left img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.messages3{
+    display: none;
+}
+
+
+
+@media (max-width: 640px) { 
+    *{
+        margin: 2px;
+    }
+    h1{
+        text-align: center;
+    }
+    .message1,
+    .message2{
+        display: none;
+    }
+    .messages3 {
+        
+        font-family: 'poppins';
+        display: contents;
+    }
+    .messages3 .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .messages3 .content-left,
+    .messages3 .content-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .messages3 .content-left img {
+        width: 100%;
+        margin: 12px 0;
+        border-radius: 15px;
+    }
+    .messages3 .content-left .name{
+        font-weight: 600;
+    }
+    .messages3 .content-left .name,
+    .messages3 .content-left .post {
+        margin: 12px 0;
+    }
+    .messages3 .content-right p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+}
+
+@media (min-width: 641px) and (max-width: 720px) {
+    h1 {
+        text-align: center;
+    }
+    .message1,
+    .message2 {
+        display: none;
+    }
+    .messages3 {
+        padding: 30px 0;
+        font-family: 'Poppins';
+        display: contents;
+    }
+    .messages3 .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .messages3 .content-left,
+    .messages3 .content-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .messages3 .content-left img {
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 15px;
+    }
+    .messages3 .content-left .name{
+        font-weight: 600;
+    }
+    .messages3 .content-left .name,
+    .messages3 .content-left .post {
+        margin: 10px 0;
+    }
+    .messages3 .content-right p {
+        font-size: 16px;
+        text-align: justify;
+    }
+}
