@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 *,
@@ -104,6 +103,14 @@ body {
   padding: 2rem 0;
   position: relative;
 }
+
+#Gallery .Gallery-slider {
+  height: 30rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+
 
 .Gallery-slide-img{
   border-radius: 2rem;
@@ -383,6 +390,8 @@ body {
     padding: 2rem 0;
     position: relative;
   }
+
+  
 
   .Gallery-slider {
     margin-bottom: 90px;
