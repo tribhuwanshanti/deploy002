@@ -70,7 +70,10 @@ const hamButton = document.getElementById('hamButton')
 
 hamButton.addEventListener('click', ()=>{
     miniNav.classList.toggle('hidden');
+    hamButton.classList.toggle('fa-bars');
+    hamButton.classList.toggle('fa-x');
 })
+
 
 miniContact.addEventListener('click', ()=>{
     miniNav.classList.toggle('hidden');
@@ -112,3 +115,11 @@ form.addEventListener('submit', function(e) {
             form.reset();
         });
 });
+
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('keydown', event => {
+    if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
+      event.preventDefault();
+    }
+  });
