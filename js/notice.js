@@ -12,7 +12,7 @@ async function getData() {
   let message = document.createElement('p')
   let date = document.createElement('span')
   title.textContent =  data[len]['title']
-  message.textContent =  data[len]['message']
+  message.innerHTML =  data[len]['message']
   date.textContent = `Published On: ${data[len]['createdAt'].split(":")[0].split('T')[0]}`
   noticeDiv.appendChild(title)
   noticeDiv.appendChild(message)
