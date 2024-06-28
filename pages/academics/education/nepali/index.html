@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+	<link rel="shortcut icon" href="/icons/nav/fav.png" type="image/x-icon">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
-	<title>Shree Tribhuwan Shanti Secondary School</title>
+	<title>STSSS | Education Nepali Stream</title>
+	<meta name="description" content="">
 
 	<!-- AOS library -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -17,285 +19,486 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
 </head>
 
-<body class="font-poppins overflow-x-hidden">
+<body class="font-poppins overflow-x-hidden" >
 
 	<!-- header section start notex sc -->
-	<header id="header_panel"
-		class="bg-bg_minor fixed top-0 h-20 z-50 flex w-full justify-between items-center px-6 md:px-12 shadow toptobottom">
+	<header
+	id="header_panel"
+	class="bg-bg_minor fixed top-0 h-20 z-50 flex w-full justify-between items-center px-6 md:px-12 shadow toptobottom"
+  >
+	<a
+	  class="h-full py-1"
+	  data-aos="fade-right"
+	  data-aos-delay="100"
+	  data-aos-duration="1000"
+	  href="/"
+	>
+	  <img
+		src="/icons/nav/main-logo.png"
+		alt="Logo"
+		class="h-full w-full md:h-full"
+	  />
+	</a>
 
-		<a data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" href="/">
-			<img src="/icons/nav/main-logo.png" alt="Logo" class="h-8 md:h-10">
+	<nav class="min-w-96 hidden lg:block">
+	  <ul
+		data-aos="fade-down"
+		data-aos-delay="100"
+		data-aos-duration="1000"
+		class="flex w"
+	  >
+		<li class="px-3 text-txt_major relative">
+		  <a
+			class="border-bg_major hover:font-bold hover:border-b-2"
+			href="/"
+		  >
+			Home</a
+		  >
+		</li>
+		<li
+		  id="aboutAnchor"
+		  class="px-3 text-txt_major hover:font-bold relative"
+		>
+		  <a>About <i id="aboutIcon" class="fa-solid fa-angle-down"></i></a>
+		  <ul
+			data-aos="fade-down"
+			data-aos-duration="1000"
+			id="aboutList"
+			class="w-64 absolute bg-bg_minor text-txt_major left-0 top-23 p-4 hidden z-50 border-[1px] border-bg_major rounded-lg"
+		  >
+			<li class="pb-3">
+			  <a
+				class="p-2 pb-0 w-full text-left font-bold"
+				href="/pages/about/overview"
+				>Overview</a
+			  >
+			  <span class="font-extralight text-sm px-2 block pt-0"
+				>About the school</span
+			  >
+			</li>
+			<li class="pb-3">
+			  <a
+				class="p-2 pb-0 w-full text-left font-bold"
+				href="/pages/about/adminstration/"
+				>Adminstration</a
+			  >
+			  <span class="font-extralight text-sm px-2 block pt-0"
+				>Message from adminstration</span
+			  >
+			</li>
+			<li class="pb-3">
+			  <a
+				class="p-2 pb-0 w-full text-left font-bold"
+				href="/pages/about/notice/"
+				>Notices</a
+			  >
+			  <span class="font-extralight text-sm px-2 block pt-0"
+				>Recent official updates</span
+			  >
+			</li>
+			<li class="pb-3">
+			  <a
+				class="p-2 pb-0 w-full text-left font-bold"
+				href="/pages/about/staffs/"
+				>Staffs</a
+			  >
+			  <span class="font-extralight text-sm px-2 block pt-0"
+				>Non teaching Staffs</span
+			  >
+			</li>
+		  </ul>
+		</li>
+		<li class="px-3 text-txt_major relative">
+		  <a
+			class="border-bg_major hover:font-bold hover:border-b-2"
+			href="/pages/admission/"
+			>Admission</a
+		  >
+		</li>
+		<li id="academicsAnchor" class="px-3 text-txt_major relative">
+		  <a class="border-bg_major hover:font-bold"
+			>Academics<i id="academicsIcon" class="fa-solid fa-angle-down"></i
+		  ></a>
+		  <ul
+			data-aos="fade-down"
+			data-aos-duration="1000"
+			id="academicsList"
+			class="w-[27rem] absolute bg-bg_minor text-txt_major left-0 top-23 p-4 hidden z-50 border-[1px] border-bg_major rounded-lg"
+		  >
+			<li class="grid grid-cols-2 pb-3">
+			  <div>
+				<a
+				  class="p-2 font-bold text-txt_major w-full text-left"
+				  href="/pages/academics/science/"
+				  >+2 Science</a
+				>
+				<span class="font-extralight text-sm px-2 block pt-0"
+				  >About XI/XII Science</span
+				>
+			  </div>
+
+			  <div>
+				<a
+				  class="p-2 font-bold text-txt_major w-full text-left"
+				  href="/pages/academics/computerscience/"
+				  >+2 Computer Science</a
+				>
+				<span class="font-extralight text-sm px-2 block pt-0"
+				  >About XI/XII Cmp. Science</span
+				>
+			  </div>
+			</li>
+
+			<li class="grid grid-cols-2 pb-3">
+			  <div>
+				<a
+				  class="p-2 font-bold text-txt_major w-full text-left"
+				  href="/pages/academics/management/english/"
+				  >+2 Mgt. English</a
+				>
+				<span class="font-extralight text-sm px-2 block pt-0"
+				  >About XI/XII Management</span
+				>
+			  </div>
+
+			  <div>
+				<a
+				  class="p-2 font-bold text-txt_major w-full text-left"
+				  href="/pages/academics/management/nepali/"
+				  >+2 Mgt. Nepali</a
+				>
+				<span class="font-extralight text-sm px-2 block pt-0"
+				  >About XI/XII Management</span
+				>
+			  </div>
+			</li>
+
+			<li class="grid grid-cols-2 pb-3">
+			  <div>
+				<a
+				  class="p-2 font-bold text-txt_major w-full text-left"
+				  href="/pages/academics/hm/"
+				  >+2 HM</a
+				>
+				<span class="font-extralight text-sm px-2 block pt-0"
+				  >About XI/XII HM</span
+				>
+			  </div>
+			  <div>
+				<a
+				  class="p-2 font-bold text-txt_major w-full text-left"
+				  href="/pages/academics/education/english/"
+				  >+2 Edu. English</a
+				>
+				<span class="font-extralight text-sm px-2 block pt-0"
+				  >About XI/XII Education</span
+				>
+			  </div>
+			</li>
+
+			<li class="grid grid-cols-2 pb-3">
+			  <div>
+				<a
+				  class="p-2 font-bold text-txt_major w-full text-left"
+				  href="/pages/academics/education/nepali/"
+				  >+2 Edu. Nepali</a
+				>
+				<span class="font-extralight text-sm px-2 block pt-0"
+				  >About XI/XII Education</span
+				>
+			  </div>
+			  <div>
+				<a
+				  class="p-2 font-bold text-txt_major w-full text-left"
+				  href="/pages/academics/secondary/"
+				  >Secondary</a
+				>
+				<span class="font-extralight text-sm px-2 block pt-0"
+				  >About Grade IX & X
+				</span>
+			  </div>
+			</li>
+			<li class="grid grid-cols-2">
+			  <div>
+				<a
+				  class="p-2 font-bold text-txt_major w-full text-left"
+				  href="/pages/academics/basic/"
+				  >Basic</a
+				>
+				<span class="font-extralight text-sm px-2 block pt-0"
+				  >From Grade I to VIII</span
+				>
+			  </div>
+			  <div>
+				<a
+				  class="p-2 font-bold text-txt_major w-full text-left"
+				  href="/pages/academics/pre-primary/"
+				  >Pre-primary</a
+				>
+				<span class="font-extralight text-sm px-2 block pt-0"
+				  >From Nursery to UKG</span
+				>
+			  </div>
+			</li>
+		  </ul>
+		</li>
+
+		<li class="px-3 text-txt_major relative">
+		  <a
+			class="border-bg_major hover:font-bold hover:border-b-2"
+			href="/pages/gallery/"
+			>Gallery</a
+		  >
+		</li>
+		<li class="px-3 text-txt_major relative">
+		  <a
+			class="border-bg_major hover:font-bold hover:border-b-2"
+			href="#contact"
+			>Contact</a
+		  >
+		</li>
+	  </ul>
+	</nav>
+
+	<div
+	  data-aos="fade-left"
+	  data-aos-delay="100"
+	  data-aos-duration="1000"
+	  class="h-8 flex wauto items-center text-center justify-end"
+	>
+	  <div
+		data-aos="fade-down"
+		data-aos-delay="100"
+		data-aos-duration="1000"
+		class="items-center flex pr-2"
+	  >
+		<a
+		  href="https://www.facebook.com/tribhuwanshantischool"
+		  target="_blank"
+		  ><img src="/icons/nav/facebook.png" alt="FB_Icon" class="mx-1 h-6"
+		/></a>
+		<a href="mailto:info@stsss.edu.np "
+		  ><img src="/icons/nav/gmail.png" alt="GM_Icon" class="mx-1 h-6"
+		/></a>
+		<a href="tel:'061-504136' "
+		  ><img src="/icons/nav/phone.png" alt="PH-Icon" class="mx-1 h-6"
+		/></a>
+	  </div>
+	  <div class="hidden sm:block">
+		<a
+		  href="https://forms.gle/x2iYb2PfuPuY367J7"
+		  target="_blank"
+		  class="bg-bg_major shadow-bg_major shadow-md text-txt_minor px-6 py-1 ease-in-out transition rounded-full hover:bg-bg_minor border-2 hover:text-txt_major border-bg_major text-nowrap overflow-hidden"
+		>
+		  XI Registration
 		</a>
+	  </div>
+	  <div class="lg:hidden ml-2 md:ml-4">
+		<i
+		  id="hamButton"
+		  class="fa-solid transition ease-in-out fa-bars text-txt_major h-7 text-[1.75rem] text-center mt-[2px]"
+		></i>
+	  </div>
+	</div>
 
-		<nav class="min-w-96 hidden lg:block ">
+	<section
+	  id="miniNav"
+	  class="fixed hidden w-full h-[100vh] bg-bg_major left-0 top-20 lg:hidden"
+	>
+	  <ul
+		data-aos="fade-right"
+		data-aos-duration="1000"
+		class="px-6 pb-6 md:px-12 grid place-content-left text-txt_minor text-sm font-sans"
+	  >
+		<li class="font-poppins font-light text-left py-4">
+		  <a class="py-2 font-normal w-full text-2xl" href="/">Home</a>
+		</li>
+		<li class="font-poppins text-2xl py-4 pt-2">
+		  <a id="miniAbout"
+			>About<i id="miniAboutIcon" class="fa-solid fa-angle-down"></i
+		  ></a>
+		  <ul
+			id="miniAboutList"
+			class="hidden bg-bg_major text-txt_minor mb-2 px-4 z-50 border-bg_minor border-l-[1px]"
+		  >
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/about/overview/"
+			  >
+				<i id="aboutIconPhone" class="fa-solid fa-angle-right"></i>
+				Overview</a
+			  >
+			</li>
 
-			<ul data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" class="flex w">
-				<li class="px-3 text-txt_major relative"> <a class="border-bg_major hover:font-bold hover:border-b-2"
-						href="/"> Home</a> </li>
-				<li id="aboutAnchor" class="px-3 text-txt_major hover:font-bold relative"> <a>About <i id="aboutIcon"
-							class="fa-solid fa-angle-down"></i></a>
-					<ul data-aos="fade-down" data-aos-duration="1000" id="aboutList"
-						class="w-64 absolute bg-bg_minor text-txt_major left-0 top-23 p-4 hidden z-50 border-[1px] border-bg_major rounded-lg">
-						<li class="pb-3">
-							<a class="p-2 pb-0 w-full text-left font-bold" href="/pages/about/overview">Overview</a>
-							<span class="font-extralight text-sm px-2 block pt-0">About the school</span>
-						</li>
-						<li class="pb-3">
-							<a class="p-2 pb-0 w-full text-left font-bold"
-								href="/pages/about/adminstration/">Adminstration</a>
-							<span class="font-extralight text-sm px-2 block pt-0">Message from adminstration</span>
-						</li>
-						<li class="pb-3">
-							<a class="p-2 pb-0 w-full text-left font-bold" href="/pages/about/notice/">Notices</a>
-							<span class="font-extralight text-sm px-2 block pt-0">Recent official updates</span>
-						</li>
-						<li class="pb-3">
-							<a class="p-2 pb-0 w-full text-left font-bold" href="/pages/about/staffs/">Staffs</a>
-							<span class="font-extralight text-sm px-2 block pt-0">Non teaching Staffs</span>
-						</li>
-					</ul>
-				</li>
-				<li class="px-3 text-txt_major relative"> <a class="border-bg_major hover:font-bold hover:border-b-2"
-						href="/pages/admission/">Admission</a> </li>
-				<li id="academicsAnchor" class="px-3 text-txt_major relative"> <a
-						class="border-bg_major hover:font-bold">Academics<i id="academicsIcon"
-							class="fa-solid fa-angle-down"></i></a>
-					<ul data-aos="fade-down" data-aos-duration="1000" id="academicsList"
-						class="w-[27rem] absolute bg-bg_minor text-txt_major left-0 top-23 p-4 hidden z-50 border-[1px] border-bg_major rounded-lg">
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/about/adminstration/"
+				><i id="aboutIconPhone" class="fa-solid fa-angle-right"></i>
+				Adminstration</a
+			  >
+			</li>
 
-						<li class="grid grid-cols-2 pb-3">
-							<div>
-								<a class="p-2 font-bold text-txt_major w-full text-left "
-									href="/pages/academics/science/">+2 Science</a>
-								<span class="font-extralight text-sm px-2 block pt-0">About XI/XII Science</span>
-							</div>
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/about/notice/"
+				><i id="aboutIconPhone" class="fa-solid fa-angle-right"></i>
+				Notice</a
+			  >
+			</li>
 
-							<div>
-								<a class="p-2 font-bold text-txt_major w-full text-left "
-									href="/pages/academics/computerscience/">+2 Computer Science</a>
-								<span class="font-extralight text-sm px-2 block pt-0">About XI/XII Cmp. Science</span>
-							</div>
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/about/staffs/"
+				><i id="aboutIconPhone" class="fa-solid fa-angle-right"></i>
+				Staffs</a
+			  >
+			</li>
+		  </ul>
+		</li>
+		<li class="font-poppins font-light text-2xl">
+		  <a id="miniAcademics"
+			>Academics<i
+			  id="miniAcademicsIcon"
+			  class="fa-solid fa-angle-down"
+			></i
+		  ></a>
+		  <ul
+			id="miniAcademicsList"
+			class="hidden bg-bg_major text-txt_minor my-2 px-4 z-50 border-bg_minor border-l-[1px]"
+		  >
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/academics/science/"
+			  >
+				<i id="aboutIconPhone" class="fa-solid fa-angle-right"></i> +2
+				Science</a
+			  >
+			</li>
 
-						<li class="grid grid-cols-2 pb-3">
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/academics/computerscience/"
+			  >
+				<i id="aboutIconPhone" class="fa-solid fa-angle-right"></i> +2
+				Computer Science</a
+			  >
+			</li>
 
-							<div>
-								<a class="p-2 font-bold text-txt_major w-full text-left "
-									href="/pages/academics/management/english/">+2 Mgt. English</a>
-								<span class="font-extralight text-sm px-2 block pt-0">About XI/XII Management</span>
-							</div>
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/academics/management/english/"
+				><i id="aboutIconPhone" class="fa-solid fa-angle-right"></i>
+				+2 Management English</a
+			  >
+			</li>
 
-							<div>
-								<a class="p-2 font-bold text-txt_major w-full text-left "
-									href="/pages/academics/management/nepali/">+2 Mgt. Nepali</a>
-								<span class="font-extralight text-sm px-2 block pt-0">About XI/XII Management</span>
-							</div>
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/academics/management/nepali/"
+				><i id="aboutIconPhone" class="fa-solid fa-angle-right"></i>
+				+2 Management Nepali</a
+			  >
+			</li>
 
-						</li>
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/academics/hm/"
+				><i id="aboutIconPhone" class="fa-solid fa-angle-right"></i>
+				+2 Hotel Management</a
+			  >
+			</li>
 
-						<li class="grid grid-cols-2 pb-3">
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/academics/education/english/"
+			  >
+				<i id="aboutIconPhone" class="fa-solid fa-angle-right"></i> +2
+				Education English</a
+			  >
+			</li>
 
-							<div>
-								<a class="p-2 font-bold text-txt_major w-full text-left " href="/pages/academics/hm/">+2
-									HM</a>
-								<span class="font-extralight text-sm px-2 block pt-0">About XI/XII HM</span>
-							</div>
-							<div>
-								<a class="p-2 font-bold text-txt_major w-full text-left "
-									href="/pages/academics/education/english/">+2 Edu. English</a>
-								<span class="font-extralight text-sm px-2 block pt-0">About XI/XII Education</span>
-							</div>
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/academics/education/nepali/"
+			  >
+				<i id="aboutIconPhone" class="fa-solid fa-angle-right"></i> +2
+				Education Nepali</a
+			  >
+			</li>
 
-						</li>
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/academics/secondary/"
+				><i id="aboutIconPhone" class="fa-solid fa-angle-right"></i>
+				Secondary Level</a
+			  >
+			</li>
 
-						<li class="grid grid-cols-2 pb-3">
-							<div>
-								<a class="p-2 font-bold text-txt_major w-full text-left "
-									href="/pages/academics/education/nepali/">+2 Edu. Nepali</a>
-								<span class="font-extralight text-sm px-2 block pt-0">About XI/XII Education</span>
-							</div>
-							<div>
-								<a class="p-2 font-bold text-txt_major w-full text-left "
-									href="/pages/academics/secondary/">Secondary</a>
-								<span class="font-extralight text-sm px-2 block pt-0">About Grade IX & X </span>
-							</div>
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/academics/basic/"
+				><i id="aboutIconPhone" class="fa-solid fa-angle-right"></i>
+				Basic Level</a
+			  >
+			</li>
 
-						</li>
-						<li class="grid grid-cols-2">
-							<div>
-								<a class="p-2 font-bold text-txt_major w-full text-left "
-									href="/pages/academics/basic/">Basic</a>
-								<span class="font-extralight text-sm px-2 block pt-0">From Grade I to VIII</span>
-							</div>
-							<div>
-								<a class="p-2 font-bold text-txt_major w-full text-left "
-									href="/pages/academics/pre-primary/">Pre-primary</a>
-								<span class="font-extralight text-sm px-2 block pt-0">From Nursery to UKG</span>
-							</div>
-						</li>
-
-					</ul>
-				</li>
-
-				<li class="px-3 text-txt_major relative"> <a class="border-bg_major hover:font-bold hover:border-b-2"
-						href="/pages/gallery/">Gallery</a> </li>
-				<li class="px-3 text-txt_major relative"> <a class="border-bg_major hover:font-bold hover:border-b-2"
-						href="#contact">Contact</a> </li>
-			</ul>
-
-		</nav>
-
-		<div data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" class=" items-center flex ">
-			<a href="https://www.facebook.com/tribhuwanshantischool" target="_blank"><img src="/icons/nav/facebook.png"
-					alt="FB_Icon" class="mx-1 h-6"></a>
-			<a href="mailto:tshsslekhnath12@gmail.com "><img src="/icons/nav/gmail.png" alt="GM_Icon"
-					class="mx-1 h-6"></a>
-			<a href="tel:'061-504136' "><img src="/icons/nav/phone.png" alt="PH-Icon" class="mx-1 h-6"></a>
-		</div>
-
-		<div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000"
-			class="h-8 flex wauto items-center text-center justify-end">
-			<div class="hidden sm:block">
-				<a href="https://forms.gle/x2iYb2PfuPuY367J7" target="_blank"
-					class="bg-bg_major shadow-bg_major shadow-md text-txt_minor px-6 py-1 ease-in-out transition  rounded-full hover:bg-bg_minor border-2 hover:text-txt_major border-bg_major text-nowrap overflow-hidden">
-					XI Registration
-				</a>
-			</div>
-			<div class="lg:hidden ml-2 md:ml-4">
-				<i id="hamButton"
-					class="fa-solid transition ease-in-out fa-bars text-txt_major h-7 text-[1.75rem]  text-center mt-[2px]"></i>
-			</div>
-		</div>
-
-		<section id="miniNav" class="fixed hidden w-full h-[100vh] bg-bg_major left-0 top-20 lg:hidden">
-
-			<ul data-aos="fade-right" data-aos-duration="1000"
-				class="px-6 pb-6 md:px-12  grid place-content-left text-txt_minor text-sm font-sans">
-
-				<li class="font-poppins font-light text-left py-4 ">
-					<a class="py-2 font-normal w-full text-2xl" href="/">Home</a>
-				</li>
-				<li class="font-poppins text-2xl py-4 pt-2">
-					<a id="miniAbout">About<i id="miniAboutIcon" class="fa-solid fa-angle-down "></i></a>
-					<ul id="miniAboutList"
-						class="hidden bg-bg_major text-txt_minor  mb-2 px-4 z-50  border-bg_minor border-l-[1px]">
-
-						<li class="h-8 align-middle  text-left">
-							<a class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/about/overview/">
-								<i id="aboutIconPhone" class="fa-solid fa-angle-right "></i> Overview</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left"><a
-								class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/about/adminstration/"><i id="aboutIconPhone"
-									class="fa-solid fa-angle-right "></i> Adminstration</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left"><a
-								class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/about/notice/"><i id="aboutIconPhone" class="fa-solid fa-angle-right "></i>
-								Notice</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left"><a
-								class=" font-light text-lg  w-full text-left hover:font-normal"
-								href="/pages/about/staffs/"><i id="aboutIconPhone" class="fa-solid fa-angle-right "></i>
-								Staffs</a>
-						</li>
-
-					</ul>
-				</li>
-				<li class="font-poppins font-light text-2xl ">
-					<a id="miniAcademics">Academics<i id="miniAcademicsIcon" class="fa-solid fa-angle-down "></i></a>
-					<ul id="miniAcademicsList"
-						class="hidden bg-bg_major text-txt_minor  my-2 px-4 z-50  border-bg_minor border-l-[1px]">
-
-						<li class="h-8 align-middle  text-left">
-							<a class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/academics/science/">
-								<i id="aboutIconPhone" class="fa-solid fa-angle-right "></i> +2 Science</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left">
-							<a class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/academics/computerscience/">
-								<i id="aboutIconPhone" class="fa-solid fa-angle-right "></i> +2 Computer Science</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left"><a
-								class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/academics/management/english/"><i id="aboutIconPhone"
-									class="fa-solid fa-angle-right "></i> +2 Management English</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left"><a
-								class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/academics/management/nepali/"><i id="aboutIconPhone"
-									class="fa-solid fa-angle-right "></i> +2 Management Nepali</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left"><a
-								class=" font-light text-lg  w-full text-left hover:font-normal"
-								href="/pages/academics/hm/"><i id="aboutIconPhone" class="fa-solid fa-angle-right "></i>
-								+2 Hotel Management</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left">
-							<a class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/academics/education/english/">
-								<i id="aboutIconPhone" class="fa-solid fa-angle-right "></i> +2 Education English</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left">
-							<a class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/academics/education/english/">
-								<i id="aboutIconPhone" class="fa-solid fa-angle-right "></i> +2 Education Nepali</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left"><a
-								class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/academics/secondary/"><i id="aboutIconPhone"
-									class="fa-solid fa-angle-right "></i> Secondary Level</a></li>
-
-						<li class="h-8 align-middle  text-left"><a
-								class=" font-light text-lg  w-full text-left hover:font-normal"
-								href="/pages/academics/basic/"><i id="aboutIconPhone"
-									class="fa-solid fa-angle-right "></i> Basic Level</a>
-						</li>
-
-						<li class="h-8 align-middle  text-left"><a
-								class=" font-light text-lg w-full text-left hover:font-normal"
-								href="/pages/academics/pre-primary/"><i id="aboutIconPhone"
-									class="fa-solid fa-angle-right "></i> Pre-Primary Level</a>
-						</li>
-
-					</ul>
-				</li>
-				<li class="font-poppins text-left py-4">
-					<a class="py-2 font-light w-full text-2xl hover:font-normal" href="/pages/admission/">Admission</a>
-				</li>
-				<li class="font-poppins text-left py-1">
-					<a class="py-2 font-light w-full text-2xl hover:font-normal" href="/pages/gallery/">Gallery</a>
-				</li>
-				<li id="miniContact" class="font-poppins text-left grid grid-cols-2">
-					<a class="py-4 col-span-1 font-light w-full text-2xl hover:font-normal" href="#contact">Contact</a>
-				</li>
-				<li class="font-poppins text-left py-6 grid grid-cols-2">
-					<div class="col-span-1 ">
-						<a href="https://forms.gle/x2iYb2PfuPuY367J7"
-							class="bg-bg_minor text-2xl text-txt_major px-6 py-2 rounded-md hover:bg-bg_major border-2 hover:text-txt_minor hover:border-bg_minor text-nowrap">
-							Register XI
-						</a>
-					</div>
-				</li>
-
-
-
-			</ul>
-
-		</section>
-
-	</header>
+			<li class="h-8 align-middle text-left">
+			  <a
+				class="font-light text-lg w-full text-left hover:font-normal"
+				href="/pages/academics/pre-primary/"
+				><i id="aboutIconPhone" class="fa-solid fa-angle-right"></i>
+				Pre-Primary Level</a
+			  >
+			</li>
+		  </ul>
+		</li>
+		<li class="font-poppins text-left py-4">
+		  <a
+			class="py-2 font-light w-full text-2xl hover:font-normal"
+			href="/pages/admission/"
+			>Admission</a
+		  >
+		</li>
+		<li class="font-poppins text-left py-1">
+		  <a
+			class="py-2 font-light w-full text-2xl hover:font-normal"
+			href="/pages/gallery/"
+			>Gallery</a
+		  >
+		</li>
+		<li id="miniContact" class="font-poppins text-left grid grid-cols-2">
+		  <a
+			class="py-4 col-span-1 font-light w-full text-2xl hover:font-normal"
+			href="#contact"
+			>Contact</a
+		  >
+		</li>
+		<li class="font-poppins text-left py-6 grid grid-cols-2">
+		  <div class="col-span-1">
+			<a
+			  href="https://forms.gle/x2iYb2PfuPuY367J7"
+			  class="bg-bg_minor text-2xl text-txt_major px-6 py-2 rounded-md hover:bg-bg_major border-2 hover:text-txt_minor hover:border-bg_minor text-nowrap"
+			>
+			  Register XI
+			</a>
+		  </div>
+		</li>
+	  </ul>
+	</section>
+  </header>
 	<!-- header sections end notex sc -->
 
 
@@ -306,10 +509,9 @@
 			<a class="text-txt_minor block overflow-hidden h-7 py-2 overflow-y-hidden text-xs text-center items-center px-6 md:px-12"
 				href="https://forms.gle/x2iYb2PfuPuY367J7">
 				<marquee onmouseover="stop()" onmouseout="start()">
-					Notice! Notice! Notice! Class XI Registration Has Starte In Shree Tribhuwan Shanti Secondary School.
-					Please <span class="text-txt_special">Click Here!</span> to Register
-					Notice! Notice! Notice! Class XI Registration Has Starte In Shree Tribhuwan Shanti Secondary School.
-					Please <span class="text-txt_special">Click Here!</span> to Register
+					Notice! Notice!! Notice!!!, Class XI registration has started in Shree
+					Tribhuwan Shanti Secondary School, Pokhara-30, Kaski. Please
+					<span class="text-txt_special">Click here to register</span>
 				</marquee>
 			</a>
 		</article>
@@ -328,7 +530,7 @@
 							alt="">
 					</div>
 					<div>
-						<h1 class="text-2xl pt-4 pr-4">+2 Eduation Nepali</h1>
+						<h1 class="text-2xl pt-4 pr-4">+2 Edu Nepali</h1>
 						<h3 class="text-lg text-txt_special py-2  pr-4">( Department Of Education)</h3>
 					</div>
 
@@ -996,7 +1198,7 @@
 						</div>
 						<div class="lg:w-3/5 px-2 mt-4 lg:mt-0">
 							<h2 class="title-font font-semibold text-txt_major tracking-widest text-xs">EMAIL</h2>
-							<a class="text-txt_major leading-relaxed">tshsslekhnath12@gmail.com</a>
+							<a class="text-txt_major leading-relaxed">info@stsss.edu.np</a>
 							<h2 class="title-font font-semibold text-txt_major tracking-widest text-xs mt-4">PHONE
 							</h2>
 							<p class="leading-relaxed text-txt_major">061-504136</p>
