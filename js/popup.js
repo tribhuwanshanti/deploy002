@@ -11,5 +11,5 @@ const popup = document.querySelector('.popup');
             popup.childNodes[1].classList.remove('showPopup');
         })
         popuppart.addEventListener('click', () => {
-            window.location.href="https://forms.gle/x2iYb2PfuPuY367J7"
+            window.location.href="/pages/entrance/"
         })
