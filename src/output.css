@@ -2287,6 +2287,10 @@ video {
   background-position: center;
 }
 
+.bg-right {
+  background-position: right;
+}
+
 .bg-repeat {
   background-repeat: repeat;
 }
