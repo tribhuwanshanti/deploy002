@@ -10,6 +10,3 @@ const popup = document.querySelector('.popup');
             popup.classList.remove('showPopup');
             popup.childNodes[1].classList.remove('showPopup');
         })
-        popuppart.addEventListener('click', () => {
-            window.location.href="/pages/entrance/"
-        })

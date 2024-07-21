@@ -23,7 +23,7 @@
 }
 
 .popup-content {
-    background-image: url('https://res.cloudinary.com/dzioycr1r/image/upload/v1720113937/eisub2p6yvcbf4csjkrg.png');
+    background-image: url('/img/notice.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
