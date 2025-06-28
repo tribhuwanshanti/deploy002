@@ -33,6 +33,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/src/output.css" />
     <link rel="stylesheet" href="/src/popup.css">
+    <link rel="stylesheet" href="/src/homeNotice.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -531,7 +532,7 @@
 
     <!-- main part starts here notex sc -->
     <main class="pt-20">
-
+      
       <!-- notice section start here notex sc -->
       <article class="bg-bg_major h-7 content-center block toptobottom">
         <a
@@ -544,32 +545,18 @@
         </a>
       </article>
       <!-- notice section ends here notex sc -->
-      
-      <!-- notice section start here notex sc -->
-      <article class="bg-bg_major h-7 content-center block toptobottom">
-        <a
-          class="text-txt_minor block overflow-hidden h-7 py-2 overflow-y-hidden text-xs text-center items-center px-6 md:px-12"
-         
-        >
-          <marquee onmouseover="stop()" onmouseout="start()">
-<!--             Notice! Notice!! Notice!!!, Class 11 Science and Management English classes will begin from 10th Shrawan 2081 BS, 9 AM. For further information please contact school adminstration at: 9856021704 -->
-          </marquee>
-        </a>
-      </article>
-      <!-- notice section ends here notex sc -->
 
 
 
 
       <!-- popup start notex sc -->
 
-<!--       <div  class="popup">
+      <!-- <div  class="popup">
         <a class="popup-content">
             <div></div>
         </a>
         <p>Click here to exit</p>
       </div> -->
-
 
 
       <!-- popup end notex sc-->
@@ -710,6 +697,7 @@
       </section>
 
       <!-- hero section end notex sc -->
+       
 
       <section class="border-bg_major border-b-2 px-6 md:mx-12 mt-72 md:mt-20 lg:mt-6">
 
@@ -731,7 +719,7 @@
 
       <!-- about us section start notex cc sc -->
 
-      <section class="mt-72 md:mt-20 lg:mt-6">
+      <section class="pt-6" >
         <div class="px-6 bg-bg_minor py-6 sm:py-8 md:px-12 lg:py-12">
           <div class="flex flex-col md:flex-row">
             <article class="md:pt-8 w-[100%] md:w-[50%]">
@@ -2046,7 +2034,7 @@
           <a href="https://notexstudios.github.io/notex">
             <div class="-mx-4 flex flex-wrap justify-between">
               <div class="px-4 w-full text-center sm:w-auto sm:text-left">
-                Copyright © 2024 NoteX Studios ||
+                Copyright © <script>document.write(new Date().getFullYear())</script> NoteX Studios ||
                 <br class="md:hidden block" />
                 All Rights Reserved
               </div>
@@ -2064,6 +2052,7 @@
     <!-- javascriot files -->
      <script src="/js/popup.js"></script>
     <script src="/js/header.js"></script>
+    <script src="/js/headerNotice.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
