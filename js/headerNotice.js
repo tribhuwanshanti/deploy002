@@ -1,19 +1,17 @@
 
-async function headerNotice(){
-    let response = await fetch("https://tribhuwan-admin.vercel.app/api/v1/noticeData");
-    let data = await response.json();
+fetch('http://localhost:3000/api/notices')
+  .then(response => response.json())
+  .then(data => {
     let headerNotice = document.querySelector('#noticeHeaderSliding')
     let length = data.length - 1 
-    headerNotice.innerHTML = data[length]['message']
-  }
+    headerNotice.innerHTML = data[length].description;
+  })
+  .catch(error => console.error('Error:', error));
 
-  headerNotice()
-
-  let mainContainer = document.getElementById("mainContainer")
-
-  async function getData() {
-    let response = await fetch("https://tribhuwan-admin.vercel.app/api/v1/noticeData");
-    let data = await response.json();
+fetch('http://localhost:3000/api/notices')
+  .then(response => response.json())
+  .then(data => {
+    let mainContainer = document.getElementById("mainContainer")
     length = data.length;
     let i = data.length - 3;
     for(i; length > i ; length-- ){
@@ -25,16 +23,19 @@ async function headerNotice(){
     title.innerHTML =  String(data[len]['title'])
     // console.log(data[len]['message']);
     
-    
-    message.innerHTML =  data[len]['message']
-    date.textContent = `Published On: ${data[len]['createdAt'].split(":")[0].split('T')[0]}`
+     data[len]['description'].replace('\\n', '<br>')
+     console.log(data[len]['description']);
+     
+    message.innerText =  data[len]['description']
+    date.textContent = `Published On: ${data[len]['created_at'].split(" ")[0]}`
     noticeDiv.appendChild(title)
     noticeDiv.appendChild(message)
     noticeDiv.appendChild(date)
     mainContainer.appendChild(noticeDiv)
     noticeDiv.classList.add('notice')
     }
+  })
+  .catch(error => console.error('Error:', error));
+
   
-  }
-  
-  getData()
+
