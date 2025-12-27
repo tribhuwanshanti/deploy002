@@ -1,5 +1,5 @@
 
-fetch('http://localhost:3000/api/notices')
+fetch('https://app.stsss.edu.np/api/notices')
   .then(response => response.json())
   .then(data => {
     let headerNotice = document.querySelector('#noticeHeaderSliding')
@@ -8,7 +8,7 @@ fetch('http://localhost:3000/api/notices')
   })
   .catch(error => console.error('Error:', error));
 
-fetch('http://localhost:3000/api/notices')
+fetch('https://app.stsss.edu.np/api/notices')
   .then(response => response.json())
   .then(data => {
     let mainContainer = document.getElementById("mainContainer")

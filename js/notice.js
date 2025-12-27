@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/api/notices')
+fetch('https://app.stsss.edu.np/api/notices')
   .then(response => response.json())
   .then(data => {
     let mainContainer = document.getElementById("mainContainer")
